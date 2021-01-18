@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Checkout</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/all.min.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="wholebody">
+		<div class="row dashboard_wrapper ">
+			<div class="nav flex-column nav-pills first_col col-md-3" id="v-pills-tab" role="tablist"
+				aria-orientation="vertical">
+				<h1>Foodholic</h1>
+				<a class="nav-link another_color" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+					role="tab" aria-controls="v-pills-home" aria-selected="false">
+					<i class="fas fa-home"></i>
+					<P>Home</P>
+				</a>
+				<a class="nav-link second_tabs another_color" id="v-pills-profile-tab" data-toggle="pill"
+					href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+					<i class="fas fa-cube"></i>
+					<p> Restaurants </p>
+				</a>
+				<a class="nav-link active" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+					role="tab" aria-controls="v-pills-messages" aria-selected="true">
+					<i class="fas fa-shopping-cart"></i>
+					<div class="my_cart">
+						<p> My cart </p> <span class="item_count"></span>
+					</div>
+				</a>
+				<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+					aria-controls="v-pills-settings" aria-selected="false">
+					<i class="fas fa-history"></i>
+					<p>History</p>
+				</a>
+				<a class="nav-link" id="v-pills-Offers-tab" data-toggle="pill" href="#v-pills-Offers" role="tab"
+					aria-controls="v-pills-Offers" aria-selected="false">
+					<i class="fas fa-gift"></i>
+					<p>Offers</p>
+				</a>
+				<div class="left_col_btm">
+					<div class="support padding_normal">
+						<i class="far fa-comments"></i>
+						<h4>Customer Support</h4>
+					</div>
+					<div class="chat_head padding_normal">
+						<div class="chat_img">
+							<img src="images/chat.png" alt="chat">
+							<h5>Alex Ferguson</h5>
+						</div>
+						<i class="fas fa-chevron-up"></i>
+					</div>
+				</div>
+			</div>
+
+			<div class="tab-content second_col col-md-9" id="v-pills-tabContent">
+				<div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+					<div class="dashboard_sec">
+						Home
+
+					</div>
+				</div>
+				<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+					Restaurants</div>
+				<div class="tab-pane fade show active" id="v-pills-messages" role="tabpanel"
+					aria-labelledby="v-pills-messages-tab">
+					<div class="sec_col">
+						<h2>Added Items</h2>
+						<i class="far fa-bell"></i>
+					</div>
+					<div class="row sec_row">
+						<div class="col-md-8">
+							<div class="order_number">
+								<h4>Order number <span> #22540 </span></h4>
+								<div class="order_items" id="main_item_list">
+									<!-- <div class="each_order">
+										<div class="each_top">
+											<div class="each_first">
+												<div class="order_tag">
+													<img src="images/pizza.png" alt="order">
+													<h4>Red N Hot (Thin Crust) Pizza</h4>
+													<div class="tags">
+														<p>L</p>
+														<p>M</p>
+													</div>
+												</div>
+												<div class="order_cat">
+													<p>Red Sauce</p>
+													<p>Ricotta</p>
+													<p>Smoked Ham</p>
+													<p>Garlic</p>
+													<p>BBQ Sauce Drizzle</p>
+												</div>
+												<div class="order_price desktop">
+													<p class="price">$25.00</p>
+													<p class="edit">Edit</p>
+												</div>
+											</div>
+											<div class="each_sec down_space">
+												<div class="order_total">
+													<span>-</span>
+													<span>2</span>
+													<span>+</span>
+												</div>
+												<p class="quan">Quantity</p>
+											</div>
+											<div class="each_third down_space">
+												<p class="price_total">$100.00</p>
+												<p class="quan">Subtotal</p>
+											</div>
+											<div class="cross">
+												<span><i class="fa fa-times" aria-hidden="true"></i></span>
+											</div>
+										</div>
+										<div class="order_price mobile">
+											<p class="price">$25.00</p>
+											<p class="edit">Edit</p>
+										</div>
+									</div>
+									<div class="each_order">
+										<div class="each_top">
+											<div class="each_first">
+												<div class="order_tag">
+													<img src="images/pizza.png" alt="order">
+													<h4>Red N Hot (Thin Crust) Pizza</h4>
+
+												</div>
+
+												<div class="order_price desktop">
+													<p class="price">$25.00</p>
+													<p class="edit">Edit</p>
+												</div>
+											</div>
+											<div class="each_sec down_space">
+												<div class="order_total">
+													<span>-</span>
+													<span>2</span>
+													<span>+</span>
+												</div>
+												<p class="quan">Quantity</p>
+											</div>
+											<div class="each_third down_space">
+												<p class="price_total">$150.00</p>
+												<p class="quan">Subtotal</p>
+											</div>
+											<div class="cross">
+												<span><i class="fa fa-times" aria-hidden="true"></i></span>
+											</div>
+										</div>
+										<div class="order_price mobile">
+											<p class="price">$25.00</p>
+											<p class="edit">Edit</p>
+										</div>
+									</div>
+									<div class="each_order">
+										<div class="each_top">
+											<div class="each_first">
+												<div class="order_tag">
+													<img src="images/pizza.png" alt="order">
+													<h4>Red N Hot (Thin Crust) Pizza</h4>
+
+												</div>
+
+												<div class="order_price desktop">
+													<p class="price">$25.00</p>
+													<p class="edit">Edit</p>
+												</div>
+											</div>
+											<div class="each_sec down_space">
+												<div class="order_total">
+													<span>-</span>
+													<span>2</span>
+													<span>+</span>
+												</div>
+												<p class="quan">Quantity</p>
+											</div>
+											<div class="each_third down_space">
+												<p class="price_total">$50.00</p>
+												<p class="quan">Subtotal</p>
+											</div>
+											<div class="cross">
+												<span><i class="fa fa-times" aria-hidden="true"></i></span>
+											</div>
+										</div>
+										<div class="order_price mobile">
+											<p class="price">$25.00</p>
+											<p class="edit">Edit</p>
+										</div>
+									</div> -->
+								</div>
+
+								<div class="coupan">
+									<div class="order_tag">
+										<img src="images/coupan.png" alt="smile">
+										<h4>Any Coupon? Apply here & get discount</h4>
+									</div>
+									<div class="coupan_num">
+										<p>QCY87R9</p>
+									</div>
+								</div>
+								<div class="add_more">
+									<a href="#" data-toggle="modal" data-target="#popupcontent">+ Add more
+										items</a>
+								</div>
+							</div>
+							<!-- Modal -->
+							<div class="modal fade" id="popupcontent" tabindex="-1" role="dialog"
+								aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content add_item_popup">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">Add new Item</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<form>
+												<div class="form-group">
+													<label for="item_name">Name</label>
+													<input type="text" class="form-control" id="item_name"
+														placeholder="Pizza">
+												</div>
+												<div class="row">
+													<div class="col">
+														<div class="form-group">
+															<label for="item_quantity">Quantity</label>
+															<input type="number" class="form-control" id="item_quantity"
+																placeholder="5">
+														</div>
+													</div>
+													<div class="col">
+														<div class="form-group">
+															<label for="item_price">Price</label>
+															<input type="number" class="form-control" id="item_price"
+																placeholder="$120">
+														</div>
+													</div>
+												</div>
+
+											</form>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary"
+												data-dismiss="modal btn">Cancel</button>
+											<button type="button" class="btn btn-primary add_new_item btn" class="close"
+												data-dismiss="modal">Add</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<h3 class="previouslys">Previously ordered items </h3>
+							<div class="order_number sec_order">
+								<div class="order_number_head">
+									<div class="order_head_left">
+										<h4>Order number #58487</h4>
+										<p class="quan">APR 10, 2020</p>
+									</div>
+									<div class="order_head_right">
+										<p>$70.50</p>
+										<i class="fas fa-chevron-up"></i>
+									</div>
+								</div>
+								<div class="order_number_bottom">
+									<div class="order_number_items">
+										<div class="order_number_items_num">
+											<h5 class="quan">Items</h5>
+											<ul>
+												<li>Red N Hot (Thin Crust) Pizza</li>
+												<li>Vaggie Supreme Pizza</li>
+												<li>Oven-Baked Potato Fries</li>
+											</ul>
+										</div>
+										<div class="order_quan">
+											<h5 class="quan">Qnt.</h5>
+											<p>2</p>
+											<p>2</p>
+											<p>2</p>
+										</div>
+										<div class="order_quan">
+											<h5 class="quan">Restaurant</h5>
+											<p>Pizza Hut</p>
+											<h5 class="quan quan_rider">Rider</h5>
+											<p>Matthew</p>
+										</div>
+										<div class="total_price">
+											<h5 class="quan">Total price</h5>
+											<p>$70.50</p>
+											<a href="#">Order details</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 sec_cols">
+							<div class="detail_col">
+								<div class="address">
+									<div class="location">
+										<i class="fas fa-map-marker-alt"></i>
+										<div class="add_details">
+											<h5 class="quan">Delivery address</h5>
+											<p>2510 E Sunset Rd Ste 5,<br> NY 89120.</p>
+										</div>
+									</div>
+									<div class="edit_pen">
+										<i class="fas fa-pen"></i>
+									</div>
+								</div>
+								<div class="choose_payment">
+									<div class="locations payment_chose">
+										<h3>Choose payment option</h3>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions"
+												id="inlineRadio1" value="option1" checked>
+											<label class="form-check-label" for="inlineRadio1">
+												<img src="images/credit.png" alt="credit card">
+												<h4> Credit card</h4>
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions"
+												id="inlineRadio2" value="option2">
+											<label class="form-check-label" for="inlineRadio2">
+												<img src="images/paypal.png" alt="credit card">
+												<h4>PayPal</h4>
+											</label>
+										</div>
+									</div>
+									<div class="edit_pen">
+										<i class="fas fa-pen"></i>
+									</div>
+								</div>
+								<div class="choose_payment">
+									<div class="locations rider_info">
+										<h3>Rider Information</h3>
+										<div class="rider_detail">
+											<img src="images/rider.png" alt="rider">
+											<div class="rider_name">
+												<h4>Mark alex</h4>
+												<p><span>Age: </span>22</p>
+											</div>
+										</div>
+									</div>
+									<div class="edit_pen">
+										<i class="fas fa-phone-alt"></i>
+									</div>
+								</div>
+								<div class="payable_amt">
+									<div class="locations">
+										<h3>Payable amount</h3>
+										<div class="price_cal">
+											<ul>
+												<li>Sub total</li>
+												<li>Delivery charge</li>
+												<li>Coupon applied</li>
+											</ul>
+											<div class="price_amt">
+												<p class="subtotal_price"></p>
+												<p class="delivery_price">$5.00</p>
+												<p class="coupon_price">- $18.00</p>
+											</div>
+										</div>
+										<div class="grand_total">
+											<div class="grand_ttle">
+												<h3>Grand Total</h3>
+												<span>(+VAT)</span>
+											</div>
+											<h3 class="grand_price"></h3>
+										</div>
+										<div class="confirm">
+											<a href="#">Confirm order & pay</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+					History</div>
+				<div class="tab-pane fade" id="v-pills-Offers" role="tabpanel" aria-labelledby="v-pills-Offers-tab">
+					Offers</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
