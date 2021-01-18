@@ -46,9 +46,9 @@ function itemContent(name, quantity, price, id) {
     </div>
     <div class="each_sec down_space">
         <div class="order_total">
-            <span class="decrease_quantity">-</span>
+            <span class="decrease_quantity" onclick="decreaseQuantity('${id}')">-</span>
             <span>${quantity}</span>
-            <span class="decrease_quantity">+</span>
+            <span class="decrease_quantity" onclick="increaseQuantity('${id}')">+</span>
         </div>
         <p class="quan">Quantity</p>
     </div>
@@ -68,6 +68,23 @@ function itemContent(name, quantity, price, id) {
 `
 };
 
+function decreaseQuantity(id){
+    const selProd = items.find(item => item.id === id);
+    const newQuantity = {
+        ...selProd,
+        quantity: selProd.quantity--,
+    }
+    displayItems();
+}
+
+function increaseQuantity(id){
+     const selProd = items.find(item => item.id === id);
+    const newQuantity = {
+        ...selProd,
+        quantity: selProd.quantity++,
+    }
+    displayItems();
+}
 
 //uuid
 function uuidv4() {
